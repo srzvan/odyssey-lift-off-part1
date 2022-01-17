@@ -2,7 +2,7 @@ const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
-    "Get the tracks array for the home page"
+    "Get the Tracks array for the home page"
     featuredTracks: [Track!]!
   }
 
