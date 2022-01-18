@@ -4,24 +4,20 @@ const resolvers = {
     // to populate the card grid on the home page
     featuredTracks: (_, __, context) => {
       const {
-        dataSources: {
-          tracksAPI: { getFeaturedTracks },
-        },
+        dataSources: { tracksAPI },
       } = context;
 
-      return getFeaturedTracks();
+      return tracksAPI.getFeaturedTracks();
     },
   },
   Track: {
     author: (parent, _, context) => {
       const { authorId: id } = parent;
       const {
-        dataSources: {
-          tracksAPI: { getAuthor },
-        },
+        dataSources: { tracksAPI },
       } = context;
 
-      return getAuthor(id);
+      return tracksAPI.getAuthor(id);
     },
   },
 };
