@@ -15,11 +15,11 @@ class TracksAPI extends RESTDataSource {
   }
 
   async getTrack(id) {
-    return this.get(`tracks/${encodeURIComponent(id)}`);
+    return this.get(`track/${encodeURIComponent(id)}`);
   }
 
   async getTrackModules(id) {
-    return this.get(`tracks/${encodeURIComponent(id)}/modules`);
+    return this.get(`track/${encodeURIComponent(id)}/modules`);
   }
 }
 
