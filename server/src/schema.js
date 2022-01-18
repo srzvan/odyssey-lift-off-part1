@@ -4,6 +4,8 @@ const typeDefs = gql`
   type Query {
     "Get the Tracks array for the home page"
     featuredTracks: [Track!]!
+    "Get a specific Track by id"
+    track(id: ID!): Track
   }
 
   "A Track is a collection of Modules that teaches about a specific topic"
