@@ -32,7 +32,7 @@ const TrackDetail = ({ track }) => {
 
   return (
     <ContentSection>
-      <CoverImage src={thumbnail} alt="" />
+      <CoverImage src={thumbnail} alt={`${title} track thumbnail`} />
       <TrackDetails>
         <DetailRow>
           <h1>{title}</h1>
@@ -55,7 +55,10 @@ const TrackDetail = ({ track }) => {
           </DetailItem>
           <DetailItem>
             <h4>Author</h4>
-            <AuthorImage src={author.photo} />
+            <AuthorImage
+              src={author.photo}
+              alt={`${author.name} profile picture`}
+            />
             <AuthorName>{author.name}</AuthorName>
           </DetailItem>
           <div>
