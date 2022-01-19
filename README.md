@@ -1,4 +1,10 @@
-# Odyssey Lift-off I: Basics
+# ~~Odyssey Lift-off I: Basics~~
+## Used this repo for all of the Odyssey Lift Off course
+- [x] Part 1 - Basics
+- [x] Part 2 - Resolvers
+- [x] Part 3 - Arguments
+- [ ] Part 4 - Mutations
+- [ ] Lab - No teaching, just building
 
 Welcome to the companion app of Odyssey Lift-off I! You can [find the course lessons and instructions on Odyssey](https://odyssey.apollographql.com/lift-off-part1), Apollo's learning platform.
 
