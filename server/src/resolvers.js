@@ -28,6 +28,38 @@ const resolvers = {
       }
     },
   },
+  Mutation: {
+    // Increment numberOfViews property for a
+    // specific Track
+    incrementTrackViews: async (_, args, context) => {
+      try {
+        const { id } = args;
+        const {
+          dataSources: { tracksAPI },
+        } = context;
+
+        const track = await tracksAPI.incrementTrackViews(id);
+
+        return {
+          code: 200,
+          success: true,
+          message: `Successfully incremented the number of views for track ${id}`,
+          track,
+        };
+      } catch (error) {
+        const {
+          extensions: { response },
+        } = error;
+
+        return {
+          code: response.status,
+          success: false,
+          message: response.body,
+          track: null,
+        };
+      }
+    },
+  },
   Track: {
     author: (parent, _, context) => {
       try {
