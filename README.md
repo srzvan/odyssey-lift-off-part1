@@ -2,7 +2,8 @@
 - [x] Part 1 - Basics
 - [x] Part 2 - Resolvers
 - [x] Part 3 - Arguments
-- [ ] Part 4 - Mutations
+- [x] Part 4 - Mutations
+- [ ] Part 5 - Production & the Schema registry
 - [ ] Lab - No teaching, just building
 
 # ~~Odyssey Lift-off I: Basics~~
