@@ -1,8 +1,8 @@
-import React from "react";
-import { gql, useQuery } from "@apollo/client";
+import React from 'react';
+import { gql, useQuery } from '@apollo/client';
 
-import { Layout, QueryResult } from "../components";
-import TrackCard from "../containers/track-card";
+import { Layout, QueryResult } from '../components';
+import TrackCard from '../containers/track-card';
 
 export const TRACKS = gql`
   query getTracks {
@@ -31,7 +31,7 @@ const Tracks = () => {
   return (
     <Layout grid>
       <QueryResult loading={loading} error={error} data={data}>
-        {data?.featuredTracks?.map(track => (
+        {data?.featuredTracks?.map((track) => (
           <TrackCard key={track.id} track={track} />
         ))}
       </QueryResult>

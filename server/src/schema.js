@@ -34,7 +34,7 @@ const typeDefs = gql`
     id: ID!
     "Module title"
     title: String!
-    "Module length in minutes"
+    "Module length in seconds"
     length: Int
   }
 
